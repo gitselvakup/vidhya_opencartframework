@@ -1,0 +1,28 @@
+{
+  "name": "vidhya_opencartframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:master": "npx playwright test --grep @master", 
+    "test:sanity": "npx playwright test --grep @sanity", 
+    "test:regression": "npx playwright test --grep @regression", 
+    "test:datadriven": "npx playwright test --grep @datadriven", 
+    "test:master:headed": "npx playwright test --grep @master --headed",
+    "test:end-to-end": "npx playwright test --grep @end-to-end --headed",
+    "test:sanity:debug": "npx playwright test --grep @sanity --debug"},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "allure-playwright": "^3.15.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "csv-parse": "^7.0.3",
+    "xlsx": "^0.18.5"
+  }
+}
